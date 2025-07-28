@@ -31,7 +31,7 @@ export default function Testimonials() {
             What Our Customers Say
           </h2>
           <p className="text-xl text-gray-600 dark:text-gray-400 mb-12 max-w-3xl mx-auto">
-            Join thousands of satisfied customers who've transformed their marketing with our AI suite.
+            Join thousands of satisfied customers who&apos;ve transformed their marketing with our AI suite.
           </p>
 
           {/* Rating display */}

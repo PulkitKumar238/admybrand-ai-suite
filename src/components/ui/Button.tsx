@@ -7,6 +7,7 @@ interface ButtonProps {
   children: ReactNode;
   className?: string;
   onClick?: () => void;
+  type?: 'button' | 'submit' | 'reset';
 }
 
 export function Button({
@@ -15,6 +16,7 @@ export function Button({
   children,
   className,
   onClick,
+  type = 'button',
 }: ButtonProps) {
   const base = 'rounded-xl font-medium transition-colors duration-300';
   const variants = {
@@ -31,6 +33,7 @@ export function Button({
 
   return (
     <button
+      type={type}
       onClick={onClick}
       className={cn(base, variants[variant], sizes[size], className)}
     >

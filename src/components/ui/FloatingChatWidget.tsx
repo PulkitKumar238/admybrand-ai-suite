@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { MessageCircle, X, Send } from 'lucide-react';
 
@@ -27,7 +27,7 @@ export default function FloatingChatWidget() {
                   </div>
                   <div>
                     <h3 className="font-semibold">Chat with us!</h3>
-                    <p className="text-xs opacity-90">We're online now</p>
+                    <p className="text-xs opacity-90">We&apos;re online now</p>
                   </div>
                 </div>
                 <button

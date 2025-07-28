@@ -9,7 +9,7 @@ interface TestimonialProps {
   quote: string;
 }
 
-const Testimonial = ({ name, title, avatar, quote }: TestimonialProps) => {
+const Testimonial = ({ name, title, quote }: TestimonialProps) => {
   return (
     <div className="bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 p-8 rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-300 relative overflow-hidden group">
       {/* Background gradient on hover */}
@@ -30,7 +30,7 @@ const Testimonial = ({ name, title, avatar, quote }: TestimonialProps) => {
 
         {/* Quote */}
         <p className="text-lg text-gray-700 dark:text-gray-300 italic leading-relaxed mb-6 group-hover:text-gray-800 dark:group-hover:text-gray-200 transition-colors duration-300">
-          "{quote}"
+          &ldquo;{quote}&rdquo;
         </p>
 
         {/* Author */}

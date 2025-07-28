@@ -4,7 +4,6 @@ import { Card } from '@/components/ui/Card';
 import { motion } from 'framer-motion';
 import { features } from '@/data/features';
 import * as Icons from 'lucide-react';
-import { GlassmorphismCard } from '@/components/animations/GlassmorphismCard';
 
 export default function Features() {
   return (
@@ -36,7 +35,7 @@ export default function Features() {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {features.map((f, i) => {
-            const LucideIcon = Icons[f.icon as keyof typeof Icons] as React.ComponentType<any>;
+            const LucideIcon = Icons[f.icon as keyof typeof Icons] as React.ComponentType<{ className?: string; size?: number }>;
             return (
               <motion.div
                 key={i}
